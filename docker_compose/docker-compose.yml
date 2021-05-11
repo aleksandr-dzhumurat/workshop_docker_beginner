@@ -19,6 +19,7 @@ services:
     environment:
       - APP_POSTGRES_HOST=postgres_proj
       - APP_POSTGRES_USER=postgres
+      - PGPASSWORD=mypass
     volumes:
       - "${SOURCE_DIR}/../data_store/raw_data:/usr/share/raw_data"
       - "./data_client/pg_client:/srv/pg_client"
